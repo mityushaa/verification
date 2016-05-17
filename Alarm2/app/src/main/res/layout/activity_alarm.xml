@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent" android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="1">
+
+    <Button android:id="@+id/btStart" android:layout_height="159dp"
+        android:layout_width="176dp"
+        android:text="@string/start"
+        android:onClick="startRepeatingTimer"
+        tools:context=".WidgetAlarmManagerActivity"
+        android:background="@drawable/alarm"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:paddingTop="100dp" />
+
+    <Button android:id="@+id/btOneTime" android:layout_height="59dp"
+        android:layout_width="158dp"
+        android:text="@string/one_time"
+        tools:context=".WidgetAlarmManagerActivity"
+        android:onClick="onetimeTimer"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/abc_background_cache_hint_selector_material_light" />
+
+    <Button android:id="@+id/btCancel" android:layout_height="98dp"
+        android:layout_width="102dp"
+         android:text="@string/cancel"
+        tools:context=".WidgetAlarmManagerActivity"
+        android:onClick="cancelRepeatingTimer"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
